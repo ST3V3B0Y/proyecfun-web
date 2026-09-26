@@ -6,7 +6,7 @@ export default function Hero() {
           <span className="eyebrow">Villavicencio · Comuna 7 · Meta</span>
           <h1>
             Generamos cultura,<br />
-            <em>construimos progreso</em>
+            <em>Construimos progreso</em>
           </h1>
           <p>
             Somos una fundación sin ánimo de lucro que busca investigar, orientar y capacitar a la comunidad, fomentando la conciencia de su papel en el desarrollo del país. Creamos programas de formación integral que impulsan el talento y promueven la movilidad social
