@@ -16,9 +16,9 @@ export default function Header() {
     <header className={`header ${scrolled ? 'scrolled' : ''}`}>
       <div className="container header-inner">
         <a href="#" className="logo">
-          <img src="/logo.png" alt="Fundación PROYECTFUN" className="logo-img" />
+          <img src="/logo.jpg" alt="Fundación PROYECFUN" className="logo-img" />
           <span className="logo-text">
-            <strong>PROYECTFUN</strong>
+            <strong>PROYECFUN</strong>
             <span>Sembramos ideas, cosechamos futuro</span>
           </span>
         </a>

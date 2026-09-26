@@ -9,7 +9,7 @@ export default function Hero() {
             <em>construimos progreso</em>
           </h1>
           <p>
-            Buscamos investigar, orientar y capacitar a la comunidad, fomentando la conciencia de su papel en el desarrollo del país. Creamos programas de formación integral que impulsan el talento y promueven la movilidad social
+            Somos una fundación sin ánimo de lucro que busca investigar, orientar y capacitar a la comunidad, fomentando la conciencia de su papel en el desarrollo del país. Creamos programas de formación integral que impulsan el talento y promueven la movilidad social
           </p>
           <div className="hero-actions">
             <a href="#proyectos" className="btn btn-primary">Ver nuestros programas</a>
@@ -18,7 +18,7 @@ export default function Hero() {
         </div>
 
         <div className="hero-logo">
-          <img src="/logo.png" alt="Logo Fundación PROYECTFUN" />
+          <img src="/logo.jpg" alt="Logo Fundación PROYECFUN" />
         </div>
       </div>
     </section>
