@@ -266,6 +266,7 @@ section{padding:96px 0;}
   border-top:1px solid rgba(255,255,255,.1);padding:24px 0;font-size:.83rem;
   display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 }
+.codigo-etica-link{text-decoration: underline;}
 
 /* REVEAL */
 .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease, transform .7s ease;}
