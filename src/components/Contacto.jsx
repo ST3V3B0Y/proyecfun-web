@@ -1,9 +1,26 @@
+import { useForm, ValidationError } from '@formspree/react';
+
 export default function Contacto() {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert('¡Gracias por escribirnos! Pronto te contactaremos.');
-    e.target.reset();
-  };
+
+  const [state, handleSubmit, reset] = useForm('xkjgqejj');
+
+  if (state.succeeded) {
+    return (
+      <section className="contact" id="contacto">
+        <div className="container">
+          <div className="form" style={{ textAlign: 'center', maxWidth: 560, margin: '0 auto' }}>
+            <h2 style={{ marginBottom: 16 }}>¡Gracias por escribirnos!</h2>
+            <p style={{ color: 'var(--muted)', marginBottom: 24 }}>
+              Hemos recibido tu mensaje y te responderemos lo antes posible.
+            </p>
+            <button className="btn btn-solid" onClick={reset}>
+              Enviar otro mensaje
+            </button>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section className="contact" id="contacto">
@@ -37,7 +54,7 @@ export default function Contacto() {
             <div className="info-icon">⌂</div>
             <div>
               <strong>Ubicación</strong>
-              <span>Villavicencio, Meta · Colombia</span>
+              <span>Comuna 7 · Villavicencio, Meta · Colombia</span>
             </div>
           </div>
 
@@ -61,21 +78,52 @@ export default function Contacto() {
         <form className="form reveal" onSubmit={handleSubmit}>
           <div className="field">
             <label htmlFor="nombre">Nombre completo</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Tu nombre"
+              required
+            />
+            <ValidationError field="nombre" errors={state.errors} />
           </div>
+
           <div className="field">
             <label htmlFor="email">Correo electrónico</label>
-            <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="tucorreo@ejemplo.com"
+              required
+            />
+            <ValidationError field="email" errors={state.errors} />
           </div>
+
           <div className="field">
             <label htmlFor="asunto">Asunto</label>
-            <input type="text" id="asunto" name="asunto" placeholder="Donación, alianza, voluntariado..." />
+            <input
+              type="text"
+              id="asunto"
+              name="asunto"
+              placeholder="Donación, alianza, voluntariado..."
+            />
           </div>
+
           <div className="field">
             <label htmlFor="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos cómo quieres apoyar..." required></textarea>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              placeholder="Cuéntanos cómo quieres apoyar..."
+              required
+            ></textarea>
+            <ValidationError field="mensaje" errors={state.errors} />
           </div>
-          <button type="submit" className="btn btn-solid">Enviar mensaje</button>
+
+          <button type="submit" className="btn btn-solid" disabled={state.submitting}>
+            {state.submitting ? 'Enviando...' : 'Enviar mensaje'}
+          </button>
         </form>
       </div>
     </section>
