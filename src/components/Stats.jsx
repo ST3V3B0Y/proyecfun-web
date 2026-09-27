@@ -4,7 +4,7 @@ const stats = [
   { count: 50,  label: 'Mujeres cabeza de hogar capacitadas' },
   { count: 100, label: 'Familias beneficiadas en alimentos' },
   { count: 7,   label: 'Programas en ejecución' },
-  { count: 1,   label: 'Comuna intervenida (Comuna 7)' },
+  { count: 1,   label: 'Comuna intervenida (Comuna 10)' },
 ];
 
 export default function Stats() {

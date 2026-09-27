@@ -3,7 +3,7 @@ export default function Hero() {
     <section className="hero">
       <div className="container hero-grid">
         <div className="hero-content">
-          <span className="eyebrow">Villavicencio · Comuna 7 · Meta</span>
+          <span className="eyebrow">Villavicencio · Comuna 10 · Meta</span>
           <h1>
             Generamos cultura,<br />
             <em>Construimos progreso</em>

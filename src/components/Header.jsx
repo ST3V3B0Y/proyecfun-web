@@ -25,7 +25,7 @@ export default function Header() {
 
         <nav className={`nav ${menuOpen ? 'open' : ''}`}>
           <ul>
-            <li><a href="#nosotros" onClick={closeMenu}>Nosotros</a></li>
+            <li><a href="#nosotros" onClick={closeMenu}>Conócenos</a></li>
             <li><a href="#proyectos" onClick={closeMenu}>Programas</a></li>
             <li><a href="#impacto" onClick={closeMenu}>Impacto</a></li>
             <li><a href="#contacto" onClick={closeMenu}>Contacto</a></li>

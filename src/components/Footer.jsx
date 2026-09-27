@@ -57,7 +57,8 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <span>© 2025 Fundación PROYECFUN. Todos los derechos reservados.</span>
-          <span>Comuna 7 · Villavicencio · Meta · Colombia</span>
+          <span><a target="_blank" href="https://drive.google.com/file/d/17WbB9hXL_42mnYl-eeoi1hGMg77jIPTb/view">Código de ética y buen gobierno</a></span>
+          <span>Comuna 10 · Villavicencio · Meta · Colombia</span>
         </div>
       </div>
     </footer>

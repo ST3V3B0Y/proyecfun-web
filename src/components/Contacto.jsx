@@ -54,7 +54,7 @@ export default function Contacto() {
             <div className="info-icon">⌂</div>
             <div>
               <strong>Ubicación</strong>
-              <span>Comuna 7 · Villavicencio, Meta · Colombia</span>
+              <span>Comuna 10 · Villavicencio, Meta · Colombia</span>
             </div>
           </div>
 

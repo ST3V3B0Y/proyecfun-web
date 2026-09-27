@@ -37,7 +37,7 @@ const projects = [
     title: 'Ludotek y Prevención',
     description:
       'Espacios lúdicos, recreativos y culturales para niños, niñas y adolescentes, como estrategia de prevención del consumo de sustancias psicoactivas.',
-    meta: [['+500', 'NNA'], ['Talleres', 'permanentes']],
+    meta: [['+500', 'N/NA'], ['Talleres', 'permanentes']],
   },
   {
     tag: 'Bienestar',
@@ -48,12 +48,12 @@ const projects = [
     meta: [['60-90', 'años'], ['Inclusión', 'social']],
   },
   {
-    tag: 'En formulación',
+    tag: 'Educación',
     icon: '🎓',
     title: 'Instituto Técnico y Tecnológico',
     description:
       'Propuesta para la creación de una corporación técnica y tecnológica que forme talento humano competente, respondiendo a las necesidades reales del sector productivo.',
-    meta: [['Diagnóstico', 'en curso'], ['Villavicencio', 'Meta']],
+    meta: [['Diagnóstico', 'En curso'], ['Villavicencio', 'Meta']],
   },
   {
     tag: 'Cultura',
@@ -74,7 +74,7 @@ export default function Proyectos() {
           <h2>Proyectos que siembran oportunidades</h2>
           <p>
             Cada programa responde a una necesidad identificada junto a la comunidad de
-            la Comuna 7 de Villavicencio.
+            la Comuna 10 de Villavicencio.
           </p>
         </div>
 
